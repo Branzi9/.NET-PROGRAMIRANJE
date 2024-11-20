@@ -1,0 +1,22 @@
+﻿@page
+@model Lottery.Pages.Loto7Model
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loto 7 od 39</title>
+</head>
+<body>
+    <h1>Loto 7 od 39</h1>
+    
+    <h2>Generisani brojevi:</h2>
+    <ul>
+        @foreach (var number in Model.RandomNumbers)
+        {
+            <li>@number</li>
+        }
+    </ul>
+</body>
+</html>
